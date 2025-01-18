@@ -3,37 +3,64 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link href="./static/css/styles.css" rel="stylesheet">
     <title>Hotel reservation</title>
 </head>
 
 <body>
-    <section id="welcome">
-        <h1>&#9734; Welcome to our family hotel &#9734;</h1>
-        <div class="home-container">
-            <div class="info">
-                <h1>Hotel reservation</h1>
-            </div>
-        </div>
-    </section>
-
-    <div class="site-content">   
-        <!-- Site Content -->
-
-        <!-- Thank you, page! -->
-        <div class="thank-you-content custom-form">
-            <div class="background">
-                <div class="shape"></div>
-                <div class="shape"></div>
-            </div>
-            <form class="thank-you">
-                <h3>Thank you for your reservation!</h3>
-                <button id="new-reservation">Make new reservation</button>
-            </form>
+<section id="welcome">
+    <h1>&#9734; Welcome to our family hotel &#9734;</h1>
+    <div class="home-container">
+        <div class="info">
+            <h1>Hotel reservation</h1>
         </div>
     </div>
-    <script src="solution.js"></script>
+</section>
+
+<div class="site-content">
+    <!-- Site Content -->
+    <div class="search-result-form-content custom-form hidden">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form>
+            <h3>Our Offers</h3>
+            <section class="offers">
+                <article class="offer-card room-type selected-room">
+                    <img alt="budget room" src="/static/img/budgetRoom.jpg">
+                    <h4>Budget Room – 120 USD</h4>
+                </article>
+                <article class="offer-card room-type">
+                    <img alt="family room" src="/static/img/familyRoom.jpg">
+                    <h4>Family Room – 250 USD</h4>
+                </article>
+                <article class="offer-card room-type">
+                    <img alt="king room" src="/static/img/kingRoom.jpg">
+                    <h4>King Room – 500 USD</h4>
+                </article>
+            </section>
+            <div class="buttons">
+                <button id="search-back-btn">Back</button>
+                <button id="search-next-btn">Next</button>
+            </div>
+
+        </form>
+    </div>
+    <!-- Thank you, page! -->
+    <div class="thank-you-content custom-form">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form class="thank-you">
+            <h3>Thank you for your reservation!</h3>
+            <button id="new-reservation">Make new reservation</button>
+        </form>
+    </div>
+</div>
+<script src="solution.js"></script>
 </body>
 
 </html>
